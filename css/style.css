@@ -1,0 +1,193 @@
+/* ---------------------------
+Font-Poppins 
+--------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* ---------------------------
+Common-Style
+--------------------------- */
+header{
+    background-color: #2D25A0;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    color: #fff;
+    font-size: 16px;
+    background-color: #E02C6D;;
+    padding: 10px 24px;
+}
+
+.fas{
+    margin-left: 8px;
+}
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.container{}
+
+/* *******************************
+        Navbar -start
+************************************ */
+.menus{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+.menu{
+    margin-left: 156px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 36px;
+}
+.menu-button{
+    margin-right: 124px;
+}
+.menu-button a{
+    text-decoration: none;
+}
+
+/* *******************************
+        Top Banner -start
+************************************ */
+
+.top-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-info{
+    margin-left: 156px;
+}
+
+.banner-title{
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+a{
+    text-decoration: none;
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+    margin-bottom: 86px;
+    margin-right: 140px;
+}
+
+
+
+
+
+
+/* --------------------------------
+Medai Query
+-------------------------------- */
+
+/* -----------------------------
+ mobile Devices
+ ---------------------------- */
+@media only screen and (max-width:688px) {
+    nav{
+        display: none;
+    }
+
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-info{
+        margin-left: 16px;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 52px;
+    }
+    
+    .banner-img img{
+        margin-top: 50px;
+        width: 329px;
+        height: 260px;
+        margin-right: 1px;
+        margin-bottom: 60px;
+    }
+}
+/* -----------------------------
+ Tablet Devices
+ ---------------------------- */
+ @media only screen and (min-width: 688px) and (max-width: 992px) {
+    nav{
+        display: none;
+    }
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner-info{
+        margin-left: 16px;
+        text-align: center;
+    }
+
+    .banner-title{
+        font-size: 64px;
+        line-height: 80px;
+        margin-top: 52px;
+        
+    }
+    .banner-img img{
+        margin-top: 50px;
+        width: 556px;
+        height: 438px;
+        margin-right: 1px;
+        margin-bottom: 60px;
+    }
+    
+ }
+
+ /* -----------------------------
+ Large Devices
+ ---------------------------- */
+
+ @media only screen and (min-width:1312px) {
+    .banner-title{
+        font-size: 80px;
+        line-height: 100px;
+        margin-top: 52px;
+        
+    }
+    .banner-img img{
+        margin-top: 50px;
+        width: 720px;
+        height: 580px;
+        margin-right: 180px;
+        margin-bottom: 110px;
+    }
+    .button{
+        color: #fff;
+        font-size: 24px;
+        background-color: #E02C6D;;
+        padding: 15px 40px;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+ }
