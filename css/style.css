@@ -26,13 +26,26 @@ header{
     margin-left: 8px;
 }
 
-/* main{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
-.container{}
+section{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.container{
+    background-color: #FFFFFF;
+}
+.section-title{
+    font-size: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #18191F;
+}
 
 /* *******************************
         Navbar -start
@@ -89,7 +102,58 @@ a{
     margin-right: 140px;
 }
 
+/* *******************************
+        Plyer list -start
+************************************ */
+.player{
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 27px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 10px;
+}
+.player-name{
+    font-size: 28px;
+    color: #18191F;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.player-info{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
+/* *******************************
+        Highlights -start
+************************************ */
+
+.highlights{
+    display: flex;
+    align-items: center;
+}
+.highlights-title{
+    color: #18191F;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 8px;
+    margin-right: 70px;
+}
+.title p{
+    margin-bottom: 24px;
+}
+.highlights-img img{
+    width: 567px;
+    height: 427px;
+}
 
 
 
@@ -128,6 +192,37 @@ Medai Query
         margin-right: 1px;
         margin-bottom: 60px;
     }
+/* -----------------------------
+ Top Player List -Start
+ ---------------------------- */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+  /* *******************************
+        Highlights -start
+************************************ */
+    .highlights{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+
+    .highlights-title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .title p{
+        font-size: 14px;
+    }
+
+    .highlights-img img{
+        width: 328px;
+        height: 248px;
+        margin-top: 30px;
+    }
+
 }
 /* -----------------------------
  Tablet Devices
@@ -160,7 +255,26 @@ Medai Query
         margin-right: 1px;
         margin-bottom: 60px;
     }
-    
+/* -----------------------------
+ Top Player List -Start
+ ---------------------------- */
+ .players{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+/* *******************************
+        Highlights -start
+************************************ */
+    .highlights{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+
+    .highlights-img img{
+        margin-top: 30px;
+    }
+        
  }
 
  /* -----------------------------
@@ -190,4 +304,29 @@ Medai Query
     .menu a{
         font-size: 20px;
     }
- }
+/* -----------------------------
+ Top Player List -Start
+ ---------------------------- */
+    .player img{
+        width: 398px;
+        height: 338px;
+    }
+    .player-name{
+        font-size: 35px;
+    }
+/* *******************************
+        Highlights -start
+************************************ */
+
+    .highlights-img img{
+        width: 747px;
+        height: 565px;
+    }
+
+    .highlights-title{
+        font-size: 60px;
+        line-height: 86px;;
+    }
+    
+}
+ 
