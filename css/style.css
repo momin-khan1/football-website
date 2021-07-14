@@ -9,6 +9,7 @@ Common-Style
 header{
     background-color: #2D25A0;
 }
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -41,7 +42,7 @@ section{
     background-color: #FFFFFF;
 }
 .section-title{
-    font-size: 60px;
+    font-size: 32px;
     margin-bottom: 70px;
     text-align: center;
     color: #18191F;
@@ -55,6 +56,7 @@ section{
     justify-content: space-between;
     padding-top: 52px;
     padding-bottom: 52px;
+    justify-content: space-evenly;
 }
 .menu{
     margin-left: 156px;
@@ -80,6 +82,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-content: center;
 }
 
 .banner-info{
@@ -103,7 +106,7 @@ a{
 }
 
 /* *******************************
-        Plyer list -start
+        Top Plyer list -start
 ************************************ */
 .player{
     padding: 15px;
@@ -155,6 +158,103 @@ a{
     height: 427px;
 }
 
+/* *******************************
+        Our Team -start
+************************************ */
+
+.bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* width: 1900px;
+    height: 536px; */
+}
+
+.bg-overlay{
+    background: linear-gradient(rgba(26, 26, 26, 0.9),rgba(51, 51, 51, 0.7)), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 1900px;
+    height: 536px;
+}
+
+.our-team{
+    text-align: center;
+    padding-top:150px;
+}
+.team-title{
+    font-size: 20px;
+    color: #fff;
+}
+
+.team-info{
+    font-size: 48px;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+/* *******************************
+        Football news -start
+************************************ */
+
+.newses{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+}
+.news{
+    padding: 15px 15px 35px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.news-img img{
+    width: 300px;
+    height: 200px;
+}
+
+.news-content{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* *******************************
+        Footer -start
+************************************ */
+footer{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-logo img{
+    width: 483px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.social-icon{
+    margin-bottom: 20px;
+    color: #969bab;
+    font-size: 20px;
+
+}
+
+.fab{
+    background-color: #E7E7E8;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.copyright{
+    font-size: 18px;
+}
 
 
 
@@ -199,7 +299,7 @@ Medai Query
         grid-template-columns: repeat(1, 1fr);
     }
 
-  /* *******************************
+/* *******************************
         Highlights -start
 ************************************ */
     .highlights{
@@ -223,10 +323,51 @@ Medai Query
         margin-top: 30px;
     }
 
+/* *******************************
+        Our Team -start
+************************************ */
+    .bg-overlay{
+        width: 400px
+    }
+
+    .team-info{
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 15px;
+        padding-bottom: 8px;
+    }
+
+/* *******************************
+        Our Team -start
+************************************ */
+    .newses{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .news-content{
+        font-size: 16px;
+    }
+
+    .news-img img{
+        width: 270px;
+        height: 150px;
+    }
+
+/* *******************************
+        Footer -start
+************************************ */
+    .footer-logo img{
+        width: 270px;
+        height: 50px;
+    }
+
 }
+
 /* -----------------------------
  Tablet Devices
  ---------------------------- */
+
+
  @media only screen and (min-width: 688px) and (max-width: 992px) {
     nav{
         display: none;
@@ -274,6 +415,28 @@ Medai Query
     .highlights-img img{
         margin-top: 30px;
     }
+
+/* *******************************
+        Our Team -start
+************************************ */
+    .bg-overlay{
+        width: 800px
+    }
+
+    .team-info{
+        font-size: 48px;
+        line-height: 60px;
+        margin-top: 15px;
+        padding-bottom: 8px;
+    }
+
+/* *******************************
+        Our Team -start
+************************************ */
+    .newses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+}
         
  }
 
